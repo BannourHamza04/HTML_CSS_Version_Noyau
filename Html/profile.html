@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="../Css/profil.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Start NavBar -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <h3>THE ATHLETIC </h3>
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <a href="./Accueil2.html" style="text-decoration: none;"><img src="../images/img/home.PNG" class="icon"
+                        alt=""></a>
+                <a href="Chat.html" style="text-decoration: none;"><img src="../images/img/messenger.PNG" class="icon"
+                        alt=""></a>
+                <a href="AddPost.html" style="text-decoration: none;"><img src="../images/img/add.PNG" class="icon"
+                        alt=""></a>
+                <img src="../images/img/explore.PNG" class="icon" alt="">
+                <a href="./Notifications.html" style="text-decoration: none;">
+                    <img src="../images/img/like.PNG" class="icon" alt="">
+                </a>
+                <a href="./profile.html" style="text-decoration: none;">
+                    <div class="icon user-profile" onclick="toggle()">
+                        <ul class="profile-dropdown-list">
+                            <li class="profile-dropdown-list-item">
+                                <a href="./EditProfil.html">
+                                    <i class="fa-regular fa-user"></i>
+                                    Edit Profile
+                                </a>
+                            </li>
+                            <li class="profile-dropdown-list-item">
+                                <a href="./Securite.html">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    Securite
+                                </a>
+                            </li>
+
+                            <li class="profile-dropdown-list-item">
+                                <a href="./Settings.html">
+                                    <i class="fa-solid fa-sliders"></i>
+                                    Settings
+                                </a>
+                            </li>
+
+                            <li class="profile-dropdown-list-item">
+                                <a href="./LoginPrincipal.html">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Start BottomBar -->
+    <nav class="Bottombar">
+        <div class="nav-wrapper">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <a href="./Accueil2.html" style="text-decoration: none;">
+                    <img src="../images/img/home.PNG" class="icon" alt="">
+                </a>
+                <img src="../images/img/messenger.PNG" class="icon" alt="">
+                <a href="./AddPost.html" style="text-decoration: none;">
+                    <img src="../images/img/add.PNG" class="icon" alt=""></a>
+                <!-- <img src="../images/img/explore.PNG" class="icon" alt=""> -->
+                <a href="./Notifications.html" style="text-decoration: none;">
+                    <img src="../images/img/like.PNG" class="icon" alt="">
+                </a>
+                <a href="./profile.html" style="text-decoration: none;">
+                    <div class="icon user-profile"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End BottomBar -->
+
+    <div class="container-Profi">
+        <div class="profile-header">
+            <div class="profile-header-top">
+                <i class="gg--chevron-left" id="backButton"></i>
+                <h1 class="profile-header-title">Profil</h1>
+            </div>
+            <div class="profile-image">
+                <img src="../images/pdp.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-user-info">
+                <div class="profile-user-header">
+                    <h1 class="profile-user-name">Hamza Bannour</h1>
+                    <button class="primary profile-edit-btn">Follow</button>
+                </div>
+                <div class="profile-bio">
+                    <p><span class="profile-real-name">Hamza Bannour</span> Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Adipisci rerum quis distinctio modi omnis, soluta iste dolor enim dicta
+                        quisquam illo maxime repellendus. 📷✈️🏕️</p>
+                </div>
+                <div class="profile-stats">
+                    <a href="./Accueil2.html"style="text-decoration: none;"><span><strong>150</strong> posts</span></a>
+                    <a href="./Followers.html"style="text-decoration: none;"><span><strong>200k</strong> followers</span></a>
+                    <a href="./Followings.html" style="text-decoration: none;"><span><strong>180k</strong> followings</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-posts">
+            <img src="../images/Login_Gym2.jpg" alt="Post 1">
+            <img src="../images/Login_Gym.jpg" alt="Post 2">
+            <img src="../images/Login_Gym2.jpg" alt="Post 3">
+            <img src="../images/Login_Gym.jpg" alt="Post 4">
+            <img src="../images/Login_Gym2.jpg" alt="Post 5">
+            <img src="../images/Login_Gym.jpg" alt="Post 6">
+            <img src="../images/Login_Gym2.jpg" alt="Post 7">
+            <img src="../images/Login_Gym.jpg" alt="Post 8">
+            <img src="../images/Login_Gym2.jpg" alt="Post 9">
+        </div>
+    </div>
+
+
+
+    <script>
+        document.getElementById('backButton').addEventListener('click', function () {
+            window.history.back();
+        });
+    </script>
+
+</body>
+
+</html>

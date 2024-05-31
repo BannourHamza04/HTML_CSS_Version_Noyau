@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="../Css/Add.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <script>
+        let profileDropdownList = document.querySelector(".profile-dropdown-list");
+        let btn = document.querySelector(".profile-dropdown-btn");
+
+        let classList = profileDropdownList.classList;
+
+        const toggle = () => classList.toggle("active");
+
+        window.addEventListener("click", function (e) {
+            if (!btn.contains(e.target)) classList.remove("active");
+        });
+
+    </script>
+
+
+    <!-- Start NavBar -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <h3>THE ATHLETIC </h3>
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <a href="./Accueil2.html" style="text-decoration: none;"><img src="../images/img/home.PNG" class="icon"
+                        alt=""></a>
+                <a href="Chat.html" style="text-decoration: none;"><img src="../images/img/messenger.PNG" class="icon"
+                        alt=""></a>
+                <a href="AddPost.html" style="text-decoration: none;"><img src="../images/img/add.PNG" class="icon"
+                        alt=""></a>
+                <img src="../images/img/explore.PNG" class="icon" alt="">
+                <a href="./Notifications.html" style="text-decoration: none;">
+                    <img src="../images/img/like.PNG" class="icon" alt="">
+                </a>
+                <div class="icon user-profile" onclick="toggle()">
+                    <ul class="profile-dropdown-list">
+                        <li class="profile-dropdown-list-item">
+                            <a href="./EditProfil.html">
+                                <i class="fa-regular fa-user"></i>
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li class="profile-dropdown-list-item">
+                            <a href="./Securite.html">
+                                <i class="fa-solid fa-chart-line"></i>
+                                Securite
+                            </a>
+                        </li>
+
+                        <li class="profile-dropdown-list-item">
+                            <a href="./Settings.html">
+                                <i class="fa-solid fa-sliders"></i>
+                                Settings
+                            </a>
+                        </li>
+
+                        <li class="profile-dropdown-list-item">
+                            <a href="./LoginPrincipal.html">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Start BottomBar -->
+    <nav class="Bottombar">
+        <div class="nav-wrapper">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <a href="./Accueil2.html" style="text-decoration: none;">
+                    <img src="../images/img/home.PNG" class="icon" alt="">
+                </a>
+                <img src="../images/img/messenger.PNG" class="icon" alt="">
+                <a href="./AddPost.html" style="text-decoration: none;">
+                    <img src="../images/img/add.PNG" class="icon" alt=""></a>
+                <a href="./Notifications.html" style="text-decoration: none;">
+                    <img src="../images/img/like.PNG" class="icon" alt="">
+                </a>
+                <a href="./profile.html" style="text-decoration: none;">
+                    <div class="icon user-profile"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End BottomBar -->
+
+
+
+    <!-- Post Form -->
+    <div class="container">
+        <div class="form">
+            <div class="title">
+                <span class="gg--chevron-left" id="backButton"></span>
+            <h2 style="color: orange;">Create Post</h2>
+            </div>
+            <div class="input-group">
+                <label for="content" class="label-content">Post content :</label>
+                <input class="content-post" type="text" placeholder="Add your post content" required>
+            </div>
+            <div class="input-group">
+                <label for="upload-img" style="cursor: pointer; color: orange; margin: 5px;"> Click to Choose your image post.</label>
+                <input type="file" id="upload-img" >
+            </div>
+            <input class="input-submit" type="submit" value="Create">
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>
