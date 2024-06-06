@@ -30,7 +30,6 @@ body {
     justify-content: center;
     padding: 5px 0;
     z-index: 1;
-    /* margin-bottom: 10px; */
 }
 
 .nav-wrapper {
@@ -103,7 +102,6 @@ body {
     padding: 5px 0;
 
 }
-
 /* End BottomBar */
 
 /* Styles pour les appareils de petite taille (Mobile) */
@@ -283,8 +281,6 @@ body {
 
 
 /* Start Settings */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
 .profile-dropdown-btn {
     display: flex;

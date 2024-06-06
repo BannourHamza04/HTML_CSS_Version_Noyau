@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -89,6 +88,8 @@ body {
     margin-left: 10px;
 }
 
+/* End NavBar */
+
 /* Start BottomBar */
 .Bottombar {
     position: fixed;
@@ -103,131 +104,7 @@ body {
     padding: 5px 0;
 
 }
-
 /* End BottomBar */
-
-/* End NavBar */
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 250px;
-    height: 100%;
-    padding: 40px 10px 30px 10px;
-    background: #fff;
-    border-right: 1px solid #dbdbdb;
-    transition: 0.3s;
-    z-index: 0;
-}
-
-.sidebar-header {
-    width: 100%;
-    margin-bottom: 25px;
-}
-
-.logo-icon {
-    display: none;
-    font-size: 28px;
-    height: 35px;
-    width: 51px;
-    text-align: center;
-}
-
-.logo-img {
-    margin-left: 14px;
-    width: 90%;
-    height: 70px;
-}
-
-.sidebar button {
-    height: 60px;
-    background: transparent;
-    border: 0;
-    padding: 0;
-    font-family: inherit;
-    cursor: pointer;
-}
-
-.sidebar button>span {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    height: 48px;
-    padding: 0 12px;
-    border-radius: 24px;
-    line-height: 1;
-}
-
-.sidebar button:hover>span {
-    background: #f2f2f2;
-}
-
-.sidebar button:hover>span :is(i, img) {
-    scale: 1.05;
-}
-
-.sidebar button>span>span {
-    transition: 0.3s;
-}
-
-.sidebar button i {
-    position: relative;
-    font-size: 28px;
-    transition: 0.2s;
-}
-
-.sidebar button img {
-    width: 28px;
-    height: 28px;
-    transition: 0.2s;
-}
-
-.sidebar button i>span {
-    display: grid;
-    place-items: center;
-    height: 20px;
-    padding: 0 4px;
-    border-radius: 10px;
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    border: 1px solid #fff;
-    background: #ff2f40;
-    color: #f9f9f9;
-    font-size: 12px;
-    font-family: 'Segoe UI';
-}
-
-.sidebar button i>em {
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: #ff2f40;
-    position: absolute;
-    border-radius: 10px;
-    top: 2px;
-    right: -1px;
-    border: 1px solid #fff;
-    color: #f9f9f9;
-    font-size: 12px;
-    font-family: 'Segoe UI';
-}
-
-.sidebar button span {
-    font-size: 17px;
-}
-
-.sidebar>nav {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 15%;
-}
 
 /* Start Post */
 
@@ -236,7 +113,6 @@ body {
     height: auto;
     background: #fff;
     border: 1px solid #dfdfdf;
-    /* margin-top: 60px; */
     position: relative;
     display: flex;
     align-items: center;
@@ -391,7 +267,6 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9998;
 }
-
 /* End Post */
 
 
@@ -482,7 +357,6 @@ body {
 }
 
 /* Start Comments */
-
 .head {
     width: 100%;
     height: fit-content;
@@ -630,19 +504,6 @@ label::before {
 
 .like:checked ~ .post-image::before {
     animation: scaleit 1.5s ease-out;
-}
-
-@keyframes scaleit {
-
-    0%,
-    100% {
-        transform: translate(-50%, -50%) scale(0);
-    }
-
-    10%,
-    90% {
-        transform: translate(-50%, -50%) scale(1);
-    }
 }
 
 .liked {
@@ -803,13 +664,10 @@ label::before {
     margin-top: 60px;
     margin-bottom: 60px;
 }
-
 /* End Comments */
 
 
 /* Start Settings */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
 .profile-dropdown-btn {
     display: flex;

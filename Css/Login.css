@@ -51,7 +51,6 @@ input {
     position: relative;
 	height: 50px;
 	width: 100%;
-	/* outline: none; */
 	font-size: 1rem;
 	color: #707070;
 	margin-top: 8px;
@@ -97,7 +96,6 @@ label {
     text-align: right;
     background-image: url(../images/Login_Gym2.jpg);
     background-size: cover;
-    /* background-position: center; */
     width: 50%;
     height: 100%;
 }
